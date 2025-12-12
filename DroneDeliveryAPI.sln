@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DroneDeliveryAPI", "DroneDeliveryAPI\DroneDeliveryAPI.csproj", "{6BB3941B-E1DF-400A-B90A-0A70CA6C5B83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DroneDelivery.Tests", "DroneDelivery.Tests\DroneDelivery.Tests.csproj", "{DD56F9C0-1953-47C1-88D1-CDA475FBED92}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6BB3941B-E1DF-400A-B90A-0A70CA6C5B83} = {6BB3941B-E1DF-400A-B90A-0A70CA6C5B83}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{6BB3941B-E1DF-400A-B90A-0A70CA6C5B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BB3941B-E1DF-400A-B90A-0A70CA6C5B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BB3941B-E1DF-400A-B90A-0A70CA6C5B83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD56F9C0-1953-47C1-88D1-CDA475FBED92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD56F9C0-1953-47C1-88D1-CDA475FBED92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD56F9C0-1953-47C1-88D1-CDA475FBED92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD56F9C0-1953-47C1-88D1-CDA475FBED92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

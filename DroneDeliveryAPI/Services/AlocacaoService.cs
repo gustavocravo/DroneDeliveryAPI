@@ -18,7 +18,7 @@ namespace DroneDeliveryAPI.Services
         private List<Drone> _drones = new List<Drone>();
         private List<Viagem> _viagens = new List<Viagem>();
 
-        // Construtor: você pode inicializar alguns dados de teste
+
 
         // ============================
         // MÉTODOS PÚBLICOS PARA CONTROLLERS

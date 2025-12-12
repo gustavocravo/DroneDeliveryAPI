@@ -1,10 +1,15 @@
 using DroneDeliveryAPI.Services;
 using DroneDeliveryAPI.Controllers;
 using System.Security.Cryptography.X509Certificates;
+using AutoMapper;
+using MediatR;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Serviços
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -20,7 +25,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Middleware
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -29,5 +34,5 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("AllowFrontend");
 app.UseAuthorization();
-app.MapControllers(); // só funciona se houver Controllers
+app.MapControllers();
 app.Run();
